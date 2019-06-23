@@ -22,7 +22,7 @@ function generarCodigo($longitud) {
  return $key;
 }
 
-几乎全部的文件都是通过预处理进行SQL传递，这玩意跟注入一直就是死对头，但是在SERVERS.PHP这玩意中没有估计到，虽然也是预处理，但是并没有通过赋值操作。
+几乎全部的文件都是通过预处理进行SQL传递，这玩意跟注入一直就是死对头，但是在SERVERS.PHP这玩意中没有顾忌到，虽然也是预处理，但是并没有通过赋值操作。
 # Payload
 
 ```server.php?sv=A1%%23' 将SQL语句闭合，然后你们懂的。```
